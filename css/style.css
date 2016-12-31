@@ -1,0 +1,395 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h2, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body .header,body .hero,body .middle{
+	line-height: 1;
+	margin:0 70px 0 70px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.footer {
+    background: #D9D9D9 url(/images/bg-texture.jpg) repeat;
+    /*color: #D9D9D9;*/
+}
+.hero {
+	margin: 56px 0px 0 0;
+    background: #333 url(../images/bg-hero.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 465px;
+}
+.logo {
+    float: left;
+    margin: 56px 56px 0 0;
+}
+.nav {
+    float: right;
+    margin: 56px 0px 0 0;
+}
+.nav li {
+    float: left;
+}
+.nav a {
+    display: block;
+    line-height: 62px;
+    padding: 0 24px 0 53px;
+    color: #626262;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Playfair Display';
+}
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+    padding: 36px 0;
+}
+.footer-nav {
+    float: right;
+    margin-right: 56px;
+}
+
+
+@font-face {
+    font-family: 'si';
+    src: url('../PATH_TO/socicon.eot');
+    src: url('../PATH_TO/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../PATH_TO/socicon.woff') format('woff'),
+         url('../PATH_TO/socicon.ttf') format('truetype'),
+         url('../PATH_TO/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../PATH_TO/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0 0 0 50px; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 11px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 0px;
+    color: #626262;
+    background-color: D9D9D9;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter:before {
+    content:'\e040';
+}
+.soc-instagram:before {
+    content:'\e057';
+}
+.soc-facebook:before {
+    content:'\e041';
+}
+.slogan{
+	float: right;
+	 font-family: 'Playfair Display';
+    text-decoration: none;
+   
+}
+.terms{
+	float: left;
+	margin-left: 56px;
+	font-family: 'Playfair Display';
+}
+/*.container:after,
+.blocks:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+/*.blocks .block {
+    float: left;
+    width: 680px;
+    margin-left: 70px;
+}*/
+/*.blocks .block:first-child {
+    margin-left: 0;
+}*/
+
+.blocks .block {
+    float: left;
+    width: 680px;
+   /* margin-left: 70px;*/
+}
+.blocks .block .phrase{
+	margin-top: 95px;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: 'Ubuntu';
+	color:#C1C1C1;
+}
+.blocks .block .title{
+	margin:28px 0 0 0;
+	font-size: 28px;
+	font-family: 'Playfair Display';
+	color:#626262;
+}
+.blocks .block p{
+	width: 666px;
+	margin-top: 28px;
+	font-size: 14px;
+	font-family: 'Playfair Display';
+	color:#626262;
+	line-height: 20px;
+}
+.blocks .block .quotes {
+	
+}
+.blocks .block .image img{
+	margin-top: 50px;
+	width: 660px;
+	height: 460px;
+}
+.blocks1 .block {
+    float: right;
+    width: 272px;
+}
+.blocks1 .block .image{
+	margin-top: 95px;
+}
+.blocks1 .block .title{
+	color:#626262;
+	font-family: playfair Display;
+	font-size: 18px;
+	margin-top: 30px;
+}
+.blocks1 .block p{
+	margin-top: 28px;
+	font-size: 12px;
+	font-family: 'Playfair Display';
+	color:#626262;
+	line-height: 20px;
+}
+
+@font-face {
+    font-family: 'si';
+    src: url('PATH_TO1/socicon.eot');
+    src: url('PATH_TO1/socicon.eot?#iefix') format('embedded-opentype'),
+         url('PATH_TO1/socicon.woff') format('woff'),
+         url('PATH_TO1/socicon.ttf') format('truetype'),
+         url('PATH_TO1/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(PATH_TO/socicon.svg) format(svg);
+    }
+}
+
+.block1_soc {
+    overflow:hidden;
+    margin-top:24px;     
+}
+
+.block1_soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.block1_soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 11px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 14px;
+    color: #B4AD9E;
+    background-color: #ffffff;
+}
+
+.block1_soc .soc-icon-last{
+    margin:0 !important;
+}
+
+.block1_soc .soc-facebook:before {
+    content:'\e041';
+}
+.block1_soc .soc-instagram:before {
+    content:'\e057';
+}
+.block1_soc .soc-pinterest:before {
+    content:'\e043';
+}
+
+.blocks1 .block .phrase{
+	margin-top: 75px;
+	font-size: 12px;
+	font-family: 'Ubuntu';
+	text-transform: uppercase;
+	color:#C7C1B6;
+	line-height: 20px;
+}
+.blocks1 .block .comments{
+	margin-top: 32px;
+	list-style-image: url('../images/ellipse.png');
+}
+.blocks1 .block .comments li{
+	margin-top: 55px;
+}
+.blocks1 .block .comments li span{
+	font-family: playfair Display;
+	color:#626262;
+	position: relative;
+	left:18px;
+	top: 3px;
+	
+}
+.blocks1 .block .comments .comments_span{
+	font-family: Ubuntu;
+	font-size: 10px;
+	color:#B4AD9E;
+	position: relative;
+	left: 18px;
+	top: 18px;
+}
+
+.blocks1 .block .banner{
+	margin-top: 52px;
+	background: #333 url(../images/Banner.jpg) no-repeat 50% 50%;
+	background-size: cover;
+	height: 250px;
+}
+.blocks1 .block .banner h1{
+	font-family: Ubuntu;
+	color: white;
+	position: relative;
+	left: 25%;
+	top: 100px;
+}
+.banner span{
+	font-family: Ubuntu;
+	font-size: 14px;
+	color:white;
+	text-transform: uppercase;
+	position: relative;
+	left: 32%;
+	top: 85px;
+}
+.block2{
+	clear: both;
+	padding-top: 180px;
+}
+.social_icons_ul{
+    overflow: hidden;
+    display: inline-flex;
+    float: right;
+}
+.social_icons_ul li{
+margin-left: 20px;
+
+}
+.block2 .block_icon {
+	position: relative;
+	top: 50%;
+}
