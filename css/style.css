@@ -56,10 +56,11 @@ table {
     /*color: #D9D9D9;*/
 }
 .hero {
-	margin: 56px 0px 0 0;
     background: #333 url(../images/bg-hero.jpg) no-repeat 50% 50%;
     background-size: cover;
     height: 465px;
+    position: relative;
+    top: 74px;
 }
 .logo {
     float: left;
@@ -391,5 +392,6 @@ margin-left: 20px;
 }
 .block2 .block_icon {
 	position: relative;
-	top: 50%;
+	bottom: 50px;
+	right: 200px;
 }
